@@ -12,6 +12,7 @@ class TopNavBar extends MainPage{
     constructor(page: Page){
         super(page);
         this.userProfileButton = this.page.locator('button.chakra-menu__menu-button');
+        this.getStartedButton = this.page.locator('a[href="/get-started"]');
     }
 
     /** 
@@ -20,7 +21,13 @@ class TopNavBar extends MainPage{
     async goToUserProfile(): Promise<void>{
         await this.userProfileButton.last().click();
     }
-     
+
+    /**
+     * Go to user dashboard .
+     */
+    async goToUserDashboard(): Promise<void>{
+        await this.getStartedButton.click();
+    }
 }
 
 export default TopNavBar;
