@@ -1,7 +1,7 @@
 {
   "name": "gitguardian_test",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project contains automated API tests using Playwright test scripts. The tests are designed to verify the functionality of https://api.gitguardian.com/.",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -10,5 +10,9 @@
   "devDependencies": {
     "@playwright/test": "^1.41.1",
     "@types/node": "^20.11.6"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "ts-node": "^10.9.2"
   }
 }
